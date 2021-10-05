@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddItemFormComponent implements OnInit {
 
-  @Input() item: BudgetItem = new BudgetItem('', null);
+  @Input() item: BudgetItem;
   @Output() formSubmit: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
 
   isNewItem: boolean;
